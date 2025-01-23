@@ -37,8 +37,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/anglyh/product-list)
-- Live Site URL: [Add live site URL here](https://product-list-mpq9.onrender.com)
+- Solution URL: [Github](https://github.com/anglyh/product-list)
+- Live Site URL: [Product List](https://product-list-mpq9.onrender.com)
 
 ## My process
 
