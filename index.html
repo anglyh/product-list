@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Product list with cart</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <main>
+    <section class="products-section">
+      <h1>Desserts</h1>
+      <ul id="product-list" class="product-list">
+        <!-- <li class="product-item">
+          <div class="product-img-container">
+            <picture>
+              <source media="(min-width: 1024px)" srcset="/assets/images/image-waffle-desktop.jpg">
+              <source media="(min-width: 768px)" srcset="./assets/images/image-waffle-tablet.jpg">
+              <source media="(min-width: 320px)" srcset="./assets/images/image-waffle-mobile.jpg">
+              <img src="/assets/images/image-waffle-thumbnail.jpg" alt="Waffle">
+            </picture>
+            <button class="add-to-cart btn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" fill="none" viewBox="0 0 21 20"><g fill="#C73B0F" clip-path="url(#a)"><path d="M6.583 18.75a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5ZM15.334 18.75a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5ZM3.446 1.752a.625.625 0 0 0-.613-.502h-2.5V2.5h1.988l2.4 11.998a.625.625 0 0 0 .612.502h11.25v-1.25H5.847l-.5-2.5h11.238a.625.625 0 0 0 .61-.49l1.417-6.385h-1.28L16.083 10H5.096l-1.65-8.248Z"/><path d="M11.584 3.75v-2.5h-1.25v2.5h-2.5V5h2.5v2.5h1.25V5h2.5V3.75h-2.5Z"/></g><defs><clipPath id="a"><path fill="#fff" d="M.333 0h20v20h-20z"/></clipPath></defs></svg>
+              Add to Cart
+            </button>
+          </div>
+  
+          <div class="product-details">
+            <p>Waffle</p>
+            <p>Waffle with Berries</p>
+            <span>$6.50</span>
+          </div>
+        </li>
+  
+        <li class="product-item">
+          <div class="product-img-container">
+            <picture>
+              <source media="(min-width: 1024px)" srcset="/assets/images/image-waffle-desktop.jpg">
+              <source media="(min-width: 768px)" srcset="./assets/images/image-waffle-tablet.jpg">
+              <source media="(min-width: 320px)" srcset="./assets/images/image-waffle-mobile.jpg">
+              <img src="/assets/images/image-waffle-thumbnail.jpg" alt="Waffle">
+            </picture>
+            <button class="add-to-cart btn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" fill="none" viewBox="0 0 21 20"><g fill="#C73B0F" clip-path="url(#a)"><path d="M6.583 18.75a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5ZM15.334 18.75a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5ZM3.446 1.752a.625.625 0 0 0-.613-.502h-2.5V2.5h1.988l2.4 11.998a.625.625 0 0 0 .612.502h11.25v-1.25H5.847l-.5-2.5h11.238a.625.625 0 0 0 .61-.49l1.417-6.385h-1.28L16.083 10H5.096l-1.65-8.248Z"/><path d="M11.584 3.75v-2.5h-1.25v2.5h-2.5V5h2.5v2.5h1.25V5h2.5V3.75h-2.5Z"/></g><defs><clipPath id="a"><path fill="#fff" d="M.333 0h20v20h-20z"/></clipPath></defs></svg>
+              Add to Cart
+            </button>
+          </div>
+  
+          <div class="product-details">
+            <p>Waffle</p>
+            <p>Waffle with Berries</p>
+            <span>$6.50</span>
+          </div>
+        </li> -->
+      </ul>
+    </section>
+
+    <section class="cart-section">
+      <div id="shopping-cart" class="shopping-cart-container">
+        <h2>Your Cart (0)</h2>
+        <div class="empty-cart">
+          <img src="/assets/images/illustration-empty-cart.svg" alt="Empty Cart">
+          <p>Your added items will appear here</p>
+        </div>
+        
+        <form id="shopping-cart-form" class="shopping-cart-form hidden">
+          <ul id="cart-list" class="cart-list">
+            <!-- <li class="cart-item">
+              <div class="cart-item-details">
+                <h4>Classic Tiramisu</h4>
+                <p><span>1x</span> <span>@$5.50</span> <span>$5.50</span></p>
+              </div>
+              <button class="delete-item">
+                <img src="assets/images/icon-remove-item.svg" alt="remove-item">
+              </button>
+            </li>
+            <li class="cart-item">
+              <div class="cart-item-details">
+                <h4>Classic Tiramisu</h4>
+                <p><span>1x</span> <span>@$5.50</span> <span>$5.50</span></p>
+              </div>
+              <button class="delete-item">
+                <img src="assets/images/icon-remove-item.svg" alt="remove-item">
+              </button>
+            </li> -->
+          </ul>
+  
+          <div id="order-total" class="order-total">
+            <p>Order Total</p>
+            <span>$0.00</span>
+          </div>
+
+          <div class="carbon-neutral">
+            <img src="assets/images/icon-carbon-neutral.svg" alt="">
+            <p>This is a <span>carbon-neutral</span> delivery</p>
+          </div>
+
+          <button id="confirm-order" class="confirm-order" type="submit">Confirm Order</button>
+        </form>
+      </div>
+    </section>
+
+    <section id="modal" class="section-modal hidden">
+      <div id="modal-order-confirmed" class="modal-order-confirmed">
+        <img src="assets/images/icon-order-confirmed.svg" alt="order confirmed">
+        <h2>Order Confirmed</h2>
+        <p>We hope you enjoy your food!</p>
+        <div class="modal-order-container">
+          <ul id="modal-list" class="cart-list modal">
+            <!-- <li class="cart-item modal">
+              <img src="http://127.0.0.1:5501/assets/images/image-panna-cotta-thumbnail.jpg" alt="panna">
+              <div class="cart-item-details modal">
+                <h4>Classic Tiramisu</h4>
+                <p>
+                  <span>1x</span>
+                  <span>@ $5.50</span>
+                </p>
+              </div>
+              <p class="order-item-total">$5.50</p>
+            </li>
+            <li class="cart-item modal">
+              <img src="http://127.0.0.1:5501/assets/images/image-panna-cotta-thumbnail.jpg" alt="panna">
+              <div class="cart-item-details modal">
+                <h4>Vanilla Panna Corta</h4>
+                <p>
+                  <span>2x</span>
+                  <span>@ $6.50</span>
+                </p>
+              </div>
+              <p class="order-item-total">$13.00</p>
+            </li> -->
+          </ul>
+          <div id="modal-order-total" class="order-total modal">
+            <p>Order Total</p>
+            <span>$0.00</span>
+          </div>
+        </div>
+        <button id="start-new-order" class="confirm-order modal">Start New Order</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/app.js" defer type="module"></script>
+</body>
+</html>
